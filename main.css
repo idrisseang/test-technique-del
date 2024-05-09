@@ -2,9 +2,23 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 
-.counter{
+.counter, .craks-text{
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.35rem;
+}
+
+.craks-text{
+    background-color: #6f2cf5;
+}
+
+.transparent-film{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.presentation-text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
