@@ -22,3 +22,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.main-button{
+    background-color: #6f2cf5;
+}
