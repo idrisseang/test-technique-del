@@ -1,0 +1,55 @@
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.counter, .craks-text{
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.35rem;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item a:hover{
+    color: #6f2cf5;
+}
+
+.craks-text, .main-button, .main-bg{
+    background-color: #6f2cf5;
+}
+.logo{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    background-image: url('./images/logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.transparent-film{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.presentation-text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.steps{
+    color: #6f2cf5;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 6rem;
+}
+.accordion{
+    --bs-accordion-active-bg:#6f2cf5;
+    --bs-accordion-active-color:#ab88f2;
+}
+.accordion-button:not(.collapsed){
+    color: white;
+    font-weight: bold;
+}
+
