@@ -9,10 +9,25 @@ body{
     font-size: 1.35rem;
 }
 
-.craks-text{
-    background-color: #6f2cf5;
+.nav-item a {
+    color: white;
 }
 
+.nav-item a:hover{
+    color: #6f2cf5;
+}
+
+.craks-text, .main-button, .main-bg{
+    background-color: #6f2cf5;
+}
+.logo{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    background-image: url('./images/logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .transparent-film{
     background-color: rgba(0, 0, 0, 0.65);
 }
@@ -22,6 +37,19 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.main-button{
-    background-color: #6f2cf5;
+.steps{
+    color: #6f2cf5;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 6rem;
 }
+.accordion{
+    --bs-accordion-active-bg:#6f2cf5;
+    --bs-accordion-active-color:#ab88f2;
+}
+.accordion-button:not(.collapsed){
+    color: white;
+    font-weight: bold;
+}
+
