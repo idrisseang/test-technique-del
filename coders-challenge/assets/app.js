@@ -1,3 +1,12 @@
+/*
+ * Welcome to your app's main JavaScript file!
+ *
+ * This file will be included onto the page via the importmap() Twig function,
+ * which should already be in your base.html.twig.
+ */
+
+import './styles/app.css';
+
 const send = document.getElementById('send');
 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast'))
 send.addEventListener('click', (e) =>{
@@ -25,7 +34,7 @@ const register = (name, email) => {
     xhr.open('POST', 'http://localhost:4000/register', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = () => {
-        if(xhr.readyState === 4 && xhr.status === 200){
+        if(xhr.readyState === 4 && xhr.status === 201){
             const data = JSON.parse(xhr.responseText);
             console.log(data);
             const message = `<strong> ✅ ${data.message}</strong> <br> <p> Merci de t'être inscrit ${data.data.name}👏. Email utilisé ${data.data.email} </p>`;
@@ -36,3 +45,4 @@ const register = (name, email) => {
     }
     xhr.send(JSON.stringify(data));
 }
+

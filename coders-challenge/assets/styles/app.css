@@ -24,7 +24,7 @@ body{
     border-radius: 100%;
     width: 45px;
     height: 45px;
-    background-image: url('./images/logo.png');
+    background-image: url('../../public/images/logo.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
